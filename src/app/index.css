@@ -1,0 +1,35 @@
+html {
+  font-style: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding-left: 36px;
+  padding-right: 36px;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 400;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease-in-out 0s;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 0 1px rgba(1,0,0,.1);
+}
+
+.header-title {
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+  color: black;
+}
+
+.header-container-one {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: space-around
+}
