@@ -33,3 +33,14 @@ a {
   width: 90px;
   justify-content: space-around
 }
+
+.header-inner {
+  display: flex;
+  margin: 0 auto;
+  min-height: 72px;
+  position: relative;
+  -webkit-transition: min-height 0.2s ease-in-out;
+  transition: min-height 0.2s ease-in-out;
+  width: 100%;
+  justify-content: space-between;
+}
