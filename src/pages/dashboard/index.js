@@ -28,23 +28,23 @@ export default class extends React.Component {
         'paint': {
           'circle-radius': {
             property: 'level',
-            'base': 1.75,
-            'stops': [[5, 3], [8, 5]]
+            'base': 2,
+            'stops': [[5, 2.5], [8, 3]]
           },
           'circle-color': {
             property: 'level',
             stops: [
-              [0, '#8a8acb'],
-              [1, '#223b53'],
-              [2, '#3887be'],
-              [3, '#56b881'],
-              [4, '#f1f075 '],
-              [5, '#f9886c'],
-              [6, '#e55e5e'],
-              [7, '#e55e5e']
-              [8, '#e55e5e']
-              [9, '#e55e5e']
-              [10, '#e55e5e']
+              [0, 'rgb(1, 251, 20)'],
+              [1, '#5be118'],
+              [2, '#74d21c'],
+              [3, '#8fb91e'],
+              [4, '#98b11d'],
+              [5, '#a1a61e'],
+              [6, '#b0971d'],
+              [7, '#bf841b'],
+              [8, '#d26a18'],
+              [9, '#e64810'],
+              [10, 'rgb(255, 0, 0)']
             ]
           }
         }
