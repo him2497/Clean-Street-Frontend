@@ -43,7 +43,23 @@ app.use(bodyParser.json())
 
 app.get('/garbage', async function (req, res) {
   const data = await streetScoresModel.find()
-  res.send(JSON.stringify(data))
+
+  const mappedData = data.map(d => ({
+    type: 'Feature',
+    properties: {
+      level: d.cleanliness,
+      imgUrl: d.img_url
+    },
+    geometry: {
+      type: 'Point',
+      coordinates:[parseFloat(d.long), parseFloat(d.lat)]
+    }
+  }))
+
+  res.send(JSON.stringify({
+    type: 'FeatureCollection',
+    features: mappedData
+  }))
 })
 
 app.listen(3000, () => console.log(`Example app listening on port 3000!`))
