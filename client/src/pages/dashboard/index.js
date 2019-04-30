@@ -73,7 +73,7 @@ export default class extends React.Component {
     
       const popup = new mapboxgl.Popup({ offset: [0, -15] })
         .setLngLat(feature.geometry.coordinates)
-        .setHTML(`<img src="${feature.properties.imgUrl}" />`)
+        .setHTML(`<img src="${feature.properties.imgUrl}" width=375 height=250 style="margin: 5px"/>`)
         .setLngLat(feature.geometry.coordinates)
         .addTo(map);
     });
