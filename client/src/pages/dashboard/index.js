@@ -34,7 +34,7 @@ export default class extends React.Component {
         'paint': {
           'circle-radius': {
             property: 'level',
-            'base': 3,
+            'base': 250,
             'stops': [[5, 2.5], [8, 3]]
           },
           'circle-color': {
